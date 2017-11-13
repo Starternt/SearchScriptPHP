@@ -86,7 +86,7 @@ final class Init
     public function get()
     {
         $db = Db::getConnection();
-        $sql = "SELECT * FROM `test` WHERE `result` = 'normal' OR `result` = 'success'";
+        $sql = "SELECT `id`, `script_name`, `start_time`, `end_time`, `result` FROM `test` WHERE `result` = 'normal' OR `result` = 'success'";
         $result = $db->prepare($sql);
         $result->setFetchMode(PDO::FETCH_ASSOC);
         $result->execute();
