@@ -21,7 +21,7 @@ class Db
         return $db;
     }
 }
-
+//comm
 final class Init
 {
     private function generateRandomString($length = 25){
