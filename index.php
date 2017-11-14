@@ -7,11 +7,11 @@ define('ROOT', dirname(__FILE__));
 
 class ixtFiles
 {
-    public function filterByExtension($var)
+    private function filterByExtension($var)
     {
         return preg_match("/^[a-zа-яё\d]{1}[a-zа-яё\d\s]*\.{1}\ixt$/i", $var);
     }
-    public function isDir($var)
+    private function isDir($var)
     {
         return !is_dir(ROOT."/ixtfolder/$var");
     }
