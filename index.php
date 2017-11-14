@@ -33,4 +33,3 @@ class ixtFiles
 $a = new ixtFiles();
 $a->findFiles();
 ?>
-
